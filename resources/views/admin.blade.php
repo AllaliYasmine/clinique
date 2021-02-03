@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> Login doc </title>
+	<title> Login Admin </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -88,13 +88,15 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form action="/doc" method="post" class="login100-form validate-form">
+            <form class="login100-form validate-form" action="/admin"  method="post">
+            
+                {{ csrf_field() }}
 					<span class="login100-form-title">
-						Doctors Login page
+						Admin Login page
                </span>
                
 
-               <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+               <div class="wrap-input100 validate-input" data-validate = "Valid Username is required">
 						<input class="input100" type="text" name="text" placeholder="Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -102,13 +104,12 @@
 						</span>
                </div>
                
-               <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                  <input class="input100" type="text" name="text" placeholder="Specialty">
-                  <span class="focus-input100"></span>
+               <div class="wrap-input100 validate-input" data-validate = "Valid specialty is required">
+						<input class="input100" type="text" name="text" placeholder="Specialty">
+						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-briefcase" aria-hidden="true"></i>
-                  </span>
-  
+						</span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
@@ -127,8 +128,8 @@
 						</span>
 					</div>
 					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+					<div class="container-login100-form-btn" class="control">
+						<button  type="submit" class="login100-form-btn" class="button is-link">
 							Login
 						</button>
 					</div>

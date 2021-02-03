@@ -13,30 +13,62 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
 Route::get('index', function () {
     return view('index');
 });
 
-Route::get('add', function () {
-    return view('add');
+
+
+Route::get('pat', function () {
+    return view('pat');
 });
 
 Route::get('doc', function () {
     return view('doc');
 });
 
-Route::get('about', function () {
-    return view('about');
-});
 
 Route::get('secr', function () {
     return view('secr');
 });
 
-Route::get('login', function () {
-    return view('login');
+Route::get('connexion', function () {
+    return view('connexion');
 });
+Route::post('connexion', function () {
+    return "nous avont reçu votre email qui est :". request('email'); 
+    return 'formulaire reçu';
+});
+
+
+Route::get('doc', function () {
+    return view('doc');
+});
+Route::post('doc', function () {
+    return "nous avont reçu votre email qui est :". request('email'); 
+    return 'formulaire reçu';
+});
+
+Route::get('secr', function () {
+    return view('secr');
+});
+Route::post('secr', function () {
+    return "nous avont reçu votre email qui est :". request('email'); 
+    return 'formulaire reçu';
+});
+
+
+Route::get('/', function () {
+$utilisateur= new App\utilisateur;
+    $utilisateur->username = Request('username');
+    $utilisateur->email = Request('email');
+    $utilisateur->password = Request('password');
+
+    $utilisateur->save();
+
+    return view('secr');
+});
+
+
+Route::get('/','ConnexionController@formulaire');
+Route::post('/','ConnexionController@traitement');

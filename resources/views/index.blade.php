@@ -65,10 +65,10 @@
                      <ul class="nav navbar-nav">
                         <li><a class="active" href="{{ url('index')}}">Home</a></li>
                         <li><a data-scroll href="#about">About us</a></li>
-                        <li><a data-scroll href="{{ url('add')}}">Admin</a></li>
+                        <li><a data-scroll href="{{ url('connexion')}}">Admin</a></li>
                         <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
                         <li><a data-scroll href="{{ url('secr')}}">Secretaria </a></li>
-						<li><a data-scroll href="{{ url('lo')}}">Patient</a></li>
+						<li><a data-scroll href="{{ url('pat')}}">Patient</a></li>
                         <li><a data-scroll href="#getintouch">Statistique</a></li>
                      </ul>
                   </div>
@@ -88,16 +88,16 @@
             </div>
          </div>
       </header>
-      <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('images/slider-bg.png');">
+      <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('images/bg-banner.jpg');">
          <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12">
                   <div class="text-contant">
                      <h2>
                         <span class="center"><span class="icon"><img src="images/icon-logo.png" alt="#" /></span></span>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
+                        <!--a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
                         <span class="wrap"></span>
-                        </a>
+                        </a-->
                      </h2>
                   </div>
                </div>
@@ -167,6 +167,64 @@
                   <!-- end messagebox -->
                </div>
                <!-- end col -->
+
+               <div class="col-md-6">
+                  <div class="post-media wow fadeIn">
+                     <img src="images/about_03.jpg" alt="" class="img-responsive">
+                     <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                  </div>
+                  <!-- end media -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+            <hr class="hr1">
+            <div class="row">
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="images/clinic_01.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Digital Control Center</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="images/clinic_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="images/clinic_02.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Hygienic Operating Room</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="images/clinic_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="images/clinic_03.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Specialist Physicians</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="service-widget">
+                     <div class="post-media wow fadeIn">
+                        <a href="images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="images/clinic_01.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3>Digital Control Center</h3>
+                  </div>
+                  <!-- end service -->
+               </div>
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </div>
  
       <footer id="footer" class="footer-area wow fadeIn">
          <div class="container">
