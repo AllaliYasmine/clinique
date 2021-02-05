@@ -8,7 +8,7 @@ class ConnexionController extends Controller
 {
     public function formulaire()
     {
-        return view('connexion');
+        return view('index');
     }
 
     public function traitement()
