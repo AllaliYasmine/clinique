@@ -39,8 +39,6 @@ Route::post('connexion', function () {
 
     $utilisateur->save();
 
-    return "nous avont reçu votre email qui est :". request('email'); 
-   
 });
 
 
@@ -49,30 +47,5 @@ Route::get('doc', function () {
 });
 Route::post('doc', function () {
     return "nous avont reçu votre email qui est :". request('email'); 
-    return 'formulaire reçu';
+
 });
-
-Route::get('secr', function () {
-    return view('secr');
-});
-Route::post('secr', function () {
-    return "nous avont reçu votre email qui est :". request('email'); 
-    return 'formulaire reçu';
-});
-
-
-Route::get('/', function () {
-$utilisateur= new App\utilisateur;
-    $utilisateur->username = Request('username');
-    $utilisateur->specialty = Request('specialty');
-    $utilisateur->email = Request('email');
-    $utilisateur->password = Request('password');
-
-    $utilisateur->save();
-
-    return view('secr');
-});
-
-
-Route::get('/','ConnexionController@formulaire');
-Route::post('/','ConnexionController@traitement');

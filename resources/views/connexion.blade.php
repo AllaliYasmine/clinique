@@ -96,7 +96,7 @@
                </span>
                
 
-               <div class="wrap-input100 validate-input" data-validate = "Valid Username is required">
+               <div class="wrap-input100 validate-input" data-validate = "#">
 						<input class="input100" type="text" name="name" placeholder="Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -104,7 +104,7 @@
 						</span>
                </div>
                
-               <div class="wrap-input100 validate-input" data-validate = "Valid specialty is required">
+               <div class="wrap-input100 validate-input" data-validate = "#">
 						<input class="input100" type="text" name="text" placeholder="Specialty">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
