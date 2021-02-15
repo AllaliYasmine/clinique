@@ -25,19 +25,42 @@ Route::get('pat', function () {
     return view('pat');
 });
 
+Route::get('addpa', function () {
+    return view('addpa');
+});
 
 Route::get('connexion', function () {
     return view('connexion');
 });
-Route::post('connexion', function () {
+
+Route::get('stat', function () {
+    return view('stat');
+});
+
+Route::get('ordo', function () {
+    return view('ordo');
+});
+
+
+Route::get('/cnx', function () {
+    return view('cnx');
+});
+
+
+Route::post('/cnx', function () {
 
     $utilisateur= new App\utilisateur;
-    $utilisateur->username = Request('username');
-    $utilisateur->specialty = Request('specialty');
+    $utilisateur->name = Request('name');
+    $utilisateur->name = Request('surname');
+    $utilisateur->name = Request('specialty');
+    
     $utilisateur->email = Request('email');
-    $utilisateur->password = Request('password');
+    $utilisateur->name = Request('password');
+    
 
     $utilisateur->save();
+
+    return 'Formulaire reçu' ;
 
 });
 

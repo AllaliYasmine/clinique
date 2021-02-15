@@ -77,18 +77,53 @@
                </div>
             </div>
          </div>
-   
+         <div class="header-bottom wow fadeIn">
+            <div class="container">
+               <nav class="main-menu">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                  </div>
+				  
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a class="active" href="{{ url('addpa')}}">+ add patient</a></li>
+                     
+                     </ul>
+                     <ul class="nav navbar-nav">
+                     <li><a class="active" href="{{ url('ordo')}}">+ add Ordonance</a></li>
+                     
+                     </ul>
+
+                     <ul class="nav navbar-nav">
+                     <li><a class="active" href="{{ url('ordo')}}">+ add Users</a></li>
+                     </ul>
+                  </div>
+               </nav>
+               <div class="serch-bar">
+                  <div id="custom-search-input">
+                     <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Search" />
+                        <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 	  </header>
 
 	
 	<div class="limiter">
-		<div class="container-login100"  style="background-image:url('images/slider-bg.png');" >
+		<div class="container-login100"  style="background-image:url('images/clinic_02.jpg');" >
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-            <form action="/connexion" method="post"  class="login100-form validate-form">
+            <form action="/connexion" method="post"  class="login100-form validate-form" >
             
                 {{ csrf_field() }}
 					<span class="login100-form-title">
@@ -97,39 +132,41 @@
                
 
                <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="name" placeholder="Username">
+						<input class="input100" type="text" name="name" placeholder="Name Surname">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
                </div>
-               
+
+
                <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="text" placeholder="Specialty">
+						<input class="input100" type="text" name="name" placeholder="Specialty">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-briefcase" aria-hidden="true"></i>
 						</span>
-					</div>
+               </div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="email" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+               <div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<input class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+
 					
 					<div class="container-login100-form-btn" class="control">
-						<button class="login100-form-btn" class="button is-link" type="submit">
+						<button class="login100-form-btn" class="button is-link" type="submit" >
 							Login
 						</button>
 					</div>
@@ -141,14 +178,13 @@
 						<a class="txt2" href="#">
 							Username / Password?
 						</a>
-					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
+                  <br>
+                  <a class="txt2" href="#">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
+
 				</form>
 			</div>
 		</div>

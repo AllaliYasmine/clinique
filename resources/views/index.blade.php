@@ -67,9 +67,9 @@
                         <li><a data-scroll href="#about">About us</a></li>
                         <li><a data-scroll href="{{ url('connexion')}}">Admin</a></li>
                         <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
-                        <li><a data-scroll href="{{ url('secr')}}">Secretaria </a></li>
+                        <li><a data-scroll href="{{ url('Addpat')}}">Secretaria </a></li>
 						<li><a data-scroll href="{{ url('pat')}}">Patient</a></li>
-                        <li><a data-scroll href="#getintouch">Statistique</a></li>
+                        <li><a data-scroll href="{{ url('stat')}}">Statistique</a></li>
                      </ul>
                   </div>
                </nav>
