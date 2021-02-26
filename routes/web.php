@@ -57,7 +57,7 @@ Route::post('/connexion', function () {
     $utilisateur->username = Request('username');
     $utilisateur->specialty = Request('specialty');
     $utilisateur->email = Request('email');
-    $utilisateur->name = Request('password');
+    $utilisateur->password = Request('password');
     
 
     $utilisateur->save();
