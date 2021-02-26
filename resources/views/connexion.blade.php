@@ -95,7 +95,7 @@
                      </ul>
 
                      <ul class="nav navbar-nav">
-                     <li><a class="active" href="{{ url('ordo')}}">+ add Users</a></li>
+                     <li><a class="active" href="{{ url('affichage')}}">+ add Users</a></li>
                      </ul>
                   </div>
                </nav>

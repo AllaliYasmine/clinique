@@ -14,31 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('index', function () {
-    return view('index');
-});
-
-Route::get('pat', function () {
-    return view('pat');
-});
-
-Route::get('addpa', function () {
-    return view('addpa');
-});
-
-Route::get('connexion', function () {
-    return view('connexion');
-});
-
-Route::get('stat', function () {
-    return view('stat');
-});
-
-Route::get('ordo', function () {
-    return view('ordo');
+    return view('welcome');
 });
 
 
@@ -46,8 +22,12 @@ Route::get('/cnx', function () {
     return view('cnx');
 });
 
+Route::get('/affichage', function () {
+    return view('affichage');
+});
 
-Route::post('/cnx', function () {
+
+Route::post('/', function () {
 
     $utilisateur= new App\utilisateur;
     $utilisateur->name = Request('name');
