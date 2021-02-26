@@ -51,7 +51,7 @@ Route::get('/connexion', function () {
 });
 
 
-Route::post('/connexion', function () {
+Route::post('/cnx', function () {
 
     $utilisateur= new App\utilisateur;
     $utilisateur->username = Request('username');
