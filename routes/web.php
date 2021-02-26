@@ -46,18 +46,16 @@ Route::get('/cnx', function () {
     return view('cnx');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/connexion', function () {
+    return view('connexion');
 });
 
 
-Route::post('/', function () {
+Route::post('/connexion', function () {
 
     $utilisateur= new App\utilisateur;
-    $utilisateur->name = Request('name');
-    $utilisateur->name = Request('surname');
-    $utilisateur->name = Request('specialty');
-    
+    $utilisateur->username = Request('username');
+    $utilisateur->specialty = Request('specialty');
     $utilisateur->email = Request('email');
     $utilisateur->name = Request('password');
     

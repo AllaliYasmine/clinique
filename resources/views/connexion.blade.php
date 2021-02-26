@@ -132,12 +132,13 @@
                
 
                <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="name" placeholder="Name Surname">
+						<input class="input100" type="text" name="name" placeholder="User Name">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
                </div>
+
 
 
                <div class="wrap-input100 validate-input" data-validate = "#">
