@@ -25,6 +25,10 @@ Route::get('pat', function () {
     return view('pat');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
+
 Route::get('addpa', function () {
     return view('addpa');
 });
