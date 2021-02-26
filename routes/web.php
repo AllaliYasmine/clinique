@@ -21,8 +21,8 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('/admin', function () {
-    return view('admin');
+Route::get('/yas', function () {
+    return view('yas');
 });
 
 
