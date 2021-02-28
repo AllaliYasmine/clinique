@@ -2,27 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Login Form Design | CodeLab</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body style="background-image:url('images/bg-banner.jpg');">
-  
-  <div class="wrapper">
+  <body>
+    <div class="wrapper">
       <div class="title">Login Form</div>
-      <form action="/connexion" method="post">
-
-      {{ csrf_field() }}
-        
-      <div class="field">
-          <input type="text" required class="input"  type="email" name="email">
+      <form action="#">
+        <div class="field">
+          <input type="text" required>
           <label>Email Address</label>
         </div>
-
         <div class="field">
-          <input type="password" required class="input"  type="password" name="password">
+          <input type="password" required>
           <label>Password</label>
         </div>
-
         <div class="content">
           <div class="checkbox">
             <input type="checkbox" id="remember-me">
@@ -33,9 +27,9 @@
         <div class="field">
           <input type="submit" value="Login">
         </div>
-        <div class="signup-link">Not a member? <a href="{{ url('inscription')}}">Signup now</a></div>
+        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
       </form>
-      </div>
+    </div>
 
-</body>
+  </body>
 </html>

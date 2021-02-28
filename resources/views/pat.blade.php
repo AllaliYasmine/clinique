@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title> Login doc </title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<!--link rel="icon" type="image/png" href="images/icons/favicon.ico"/-->
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-
- <!-- Basic -->
- <meta charset="utf-8">
+   <!-- Basic -->
+   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <!-- Mobile Metas -->
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,15 +26,13 @@
    <link rel="stylesheet" href="css/responsive.css">
    <!-- Custom CSS -->
    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body class="clinic_version">
-
- <!-- LOADER -->
- <div id="preloader">
-         <img class="preloader" src="images/loaders/heart-loading2.gif" alt=""  >
+   <body class="clinic_version">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
       </div>
       <!-- END LOADER -->
-	  <header>
+      <header>
          <div class="header-top wow fadeIn">
             <div class="container">
                <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
@@ -77,82 +54,166 @@
                </div>
             </div>
          </div>
-   
-	  </header>
-
-	
-	<div class="limiter">
-		<div class="container-login100"  style="background-image:url('images/slider-bg.png');" >
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
-				</div>
-
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Doctors Login page
-               </span>
-               
-
-               <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="text" placeholder="Username">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
+         <div class="header-bottom wow fadeIn">
+            <div class="container">
+               <nav class="main-menu">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                  </div>
+				  
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a class="active" href="{{ url('index')}}">Home</a></li>
+                        <li><a data-scroll href="#about">About us</a></li>
+                        <li><a data-scroll href="{{ url('cnx')}}">Admin</a></li>
+                        <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
+                        <li><a data-scroll href="{{ url('secr')}}">Secretaria </a></li>
+						<li><a data-scroll href="{{ url('pat')}}">Patient</a></li>
+                        <li><a data-scroll href="{{ url('stat')}}">Statistique</a></li>
+                     </ul>
+                  </div>
+               </nav>
+               <div class="serch-bar">
+                  <div id="custom-search-input">
+                     <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Search" />
+                        <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                     </div>
+                  </div>
                </div>
-               
-               <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="text" placeholder="Specialty">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
-						</span>
-					</div>
+            </div>
+         </div>
+      </header>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
+      <br></br><br></br>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
+      <div id="service" class="services wow fadeIn">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                  <div class="inner-services">
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon1.png" alt="#" /></span>
+                           <h4>PREMIUM FACILITIES</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon2.png" alt="#" /></span>
+                           <h4>LARGE LABORATORY</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon3.png" alt="#" /></span>
+                           <h4>DETAILED SPECIALIST</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon4.png" alt="#" /></span>
+                           <h4>CHILDREN CARE CENTER</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon5.png" alt="#" /></span>
+                           <h4>FINE INFRASTRUCTURE</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="serv">
+                           <span class="icon-service"><img src="images/service-icon6.png" alt="#" /></span>
+                           <h4>ANYTIME BLOOD BANK</h4>
+                           <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="appointment-form">
+                     <h3><span>+</span> Book Appointment</h3>
+                     <div class="form">
+                        <form action="index.html">
+                           <fieldset>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <input type="text" id="name" placeholder="Your Name"  />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <input type="email" placeholder="Email Address" id="email" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <select class="form-control">
+                                          <option>Day</option>
+                                          <option>Sunday</option>
+                                          <option>Monday</option>
+                                       </select>
+                                    </div>
+                                    <div class="form-group">
+                                       <select class="form-control">
+                                          <option>Time</option>
+                                          <option>AM</option>
+                                          <option>PM</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <select class="form-control">
+                                          <option>Doctor Name</option>
+                                          <option>Mr.XYZ</option>
+                                          <option>Mr.ABC</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <div class="center"><button type="submit">Submit</button></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </fieldset>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end section -->
 
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	<div class="copyright-area wow fadeIn">
+      <div class="copyright-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-8">
@@ -175,33 +236,13 @@
             </div>
          </div>
       </div>
-
-	
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-   <script src="js/main.js"></script>
-   
-    <!-- end copyrights -->
-    <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- end copyrights -->
+      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
       <!-- all js files -->
       <script src="js/all.js"></script>
       <!-- all plugins -->
       <script src="js/custom.js"></script>
       <!-- map -->
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
-
-</body>
+   </body>
 </html>

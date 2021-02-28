@@ -44,11 +44,11 @@
                      </div>
                      <div class="info-inner">
                         <span class="icontop"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <span class="iconcont"><a data-scroll href="mailto:info@yoursite.com">Allali.y@gmail.com</a></span>	
+                        <span class="iconcont"><a data-scroll href="mailto:info@yoursite.com">Life.care@gmail.com</a></span>	
                      </div>
                      <div class="info-inner">
                         <span class="icontop"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                        <span class="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>	
+                        <span class="iconcont"><a data-scroll href="#">Daily: 9:00am - 5:00pm</a></span>	
                      </div>
                   </div>
                </div>
@@ -65,9 +65,9 @@
                      <ul class="nav navbar-nav">
                         <li><a class="active" href="{{ url('index')}}">Home</a></li>
                         <li><a data-scroll href="#about">About us</a></li>
-                        <li><a data-scroll href="{{ url('cnx')}}">Admin</a></li>
+                        <li><a data-scroll href="{{ url('inscription')}}">Admin</a></li>
                         <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
-                        <li><a data-scroll href="{{ url('yas')}}">Secretaria </a></li>
+                        <li><a data-scroll href="{{ url('secr')}}">Secretaria </a></li>
 						<li><a data-scroll href="{{ url('pat')}}">Patient</a></li>
                         <li><a data-scroll href="{{ url('stat')}}">Statistique</a></li>
                      </ul>
@@ -95,9 +95,9 @@
                   <div class="text-contant">
                      <h2>
                         <span class="center"><span class="icon"><img src="images/icon-logo.png" alt="#" /></span></span>
-                        <!--a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
+                        <a href="" class="typewrite" data-period="2000"  style="background:#ffffff;" data-type='[ "Elsalamo Alaykum Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
                         <span class="wrap"></span>
-                        </a-->
+                        </a>
                      </h2>
                   </div>
                </div>
@@ -125,9 +125,9 @@
                      <h3>Working Hours</h3>
                      <div class="time-table-section">
                         <ul>
-                           <li><span class="left">Monday - Friday</span><span class="right">8.00 – 18.00</span></li>
-                           <li><span class="left">Saturday</span><span class="right">8.00 – 16.00</span></li>
-                           <li><span class="left">Sunday</span><span class="right">8.00 – 13.00</span></li>
+                           <li><span class="left">Monday - Friday</span><span class="right">9.00 – 12.00</span></li>
+                           <li><span class="left">Saturday</span><span class="right">9.00 – 16.00</span></li>
+                           <li><span class="left">Sunday</span><span class="right">9.00 – 13.00</span></li>
                         </ul>
                      </div>
                   </div>

@@ -1,6 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- saved from url=(0044)https://www.jotform.com/form/210365341099555 -->
-<html class="supernova"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en" class="supernova">
+<head>
+	<title> Add patient </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<!--link rel="icon" type="image/png" href="images/icons/favicon.ico"/-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<!-- link patient -->
+   
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F210365341099555" title="oEmbed Form">
 <link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F210365341099555" title="oEmbed Form">
@@ -24,7 +46,36 @@
 <script src="./New Patient Enrollment Form_files/punycode.min.js.téléchargement"></script>
 <script src="./New Patient Enrollment Form_files/prototype.forms.js.téléchargement" type="text/javascript"></script>
 <script src="./New Patient Enrollment Form_files/jotform.forms.js.téléchargement" type="text/javascript"></script>
-<script type="text/javascript">
+<!-- end link patient -->
+ <!-- Basic -->
+ <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- Site Metas -->
+   <title>Life Care</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Colors CSS -->
+   <link rel="stylesheet" href="css/colors.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+
+   <!-- link patient-->
+   <script type="text/javascript">
 	JotForm.init(function(){
       JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
       setTimeout(function() {
@@ -48,8 +99,41 @@ if (window.JotForm && JotForm.accessible) $('input_22').setAttribute('tabindex',
 JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New Patient Enrollment","type":"control_head"},{"name":"submitForm","qid":"2","text":"Enroll","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},{"name":"address4","qid":"4","text":"Address:","type":"control_address"},{"name":"contactNumber","qid":"5","text":"Contact Number:","type":"control_phone"},{"name":"dateOf","qid":"6","text":"Date of Birth","type":"control_birthdate"},null,null,null,null,null,null,{"name":"emergencyContact13","qid":"13","text":"Emergency Contact:","type":"control_fullname"},null,null,null,null,null,null,null,null,{"description":"Please list all medications (DRUG NAME, DOSE, FREQUENCY, ROUTE) that you are currently prescribed, if more than one, separate them with a comma.","name":"ifYes","qid":"22","text":"If yes, please list it here","type":"control_textarea"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"takingAny","qid":"43","text":"Taking any medications, currently?","type":"control_radio"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"relationship","qid":"73","text":"Relationship","type":"control_textbox"},{"name":"contactNumber74","qid":"74","text":"Contact Number","type":"control_phone"},{"name":"clickTo75","qid":"75","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"clickTo108","qid":"108","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,{"name":"heightinches118","qid":"118","text":"Height (inches)","type":"control_textbox"},{"name":"weightpounds","qid":"119","text":"Weight (pounds)","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"email","qid":"225","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,null,null,null,null,{"name":"sex","qid":"231","text":"Sex","type":"control_dropdown"},{"name":"maritalStatus232","qid":"232","text":"Marital Status","type":"control_dropdown"},{"name":"clickTo233","qid":"233","text":"In case of emergency","type":"control_text"},{"name":"lthrgt","qid":"234","text":"","type":"control_text"}]);}, 20); 
 </script>
 </head>
-<body>
-<form class="jotform-form" action="https://submit.jotform.com/submit/210365341099555/" method="post" name="form_210365341099555" id="210365341099555" accept-charset="utf-8" autocomplete="on" novalidate="true" style="background-image:url('images/clinic_02.jpg');">
+<body class="clinic_version">
+
+ <!-- LOADER -->
+ <div id="preloader">
+         <img class="preloader" src="images/loaders/heart-loading2.gif" alt=""  >
+      </div>
+      <!-- END LOADER -->
+	  <header>
+         <div class="header-top wow fadeIn">
+            <div class="container">
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <div class="right-header">
+                  <div class="header-info">
+                     <div class="info-inner">
+                        <span class="icontop"><img src="images/phone-icon.png" alt="#"></span>
+                        <span class="iconcont"><a href="tel:800 123 456">+213798989801</a></span>	
+                     </div>
+                     <div class="info-inner">
+                        <span class="icontop"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="iconcont"><a data-scroll href="mailto:info@yoursite.com">Allali.y@gmail.com</a></span>	
+                     </div>
+                     <div class="info-inner">
+                        <span class="icontop"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                        <span class="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>	
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+	  </header>
+
+	<!-- add patient -->
+
+  <form class="jotform-form" action="https://submit.jotform.com/submit/210365341099555/" method="post" name="form_210365341099555" id="210365341099555" accept-charset="utf-8" autocomplete="on" novalidate="true" style="background-image:url('images/clinic_02.jpg');">
   <input type="hidden" name="formID" value="210365341099555">
   <input type="hidden" id="JWTContainer" value="">
   <input type="hidden" id="cardinalOrderNumber" value="">
@@ -369,7 +453,64 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
 
     </ul>
   </div>
-  <script>
+ 
+  <!-- ens add patient -->
+
+
+	
+	<div class="copyright-area wow fadeIn">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="footer-text">
+                     <p>© 2021 Lifecare. All Rights Reserved.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="social">
+                     <ul class="social-links">
+                        <li><a href=""><i class="fa fa-rss"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+   <script src="js/main.js"></script>
+   
+    <!-- end copyrights -->
+    <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- all js files -->
+      <script src="js/all.js"></script>
+      <!-- all plugins -->
+      <script src="js/custom.js"></script>
+      <!-- map -->
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
+
+
+     <script>
   JotForm.showJotFormPowered = "new_footer";
   </script>
   <script>
@@ -390,4 +531,5 @@ for (var i = 0; i < all_spc.length; i++)
 
 <script src="./New Patient Enrollment Form_files/smoothscroll.min.js.téléchargement"></script>
 <script src="./New Patient Enrollment Form_files/errorNavigation.js.téléchargement"></script>
-</body></html>
+</body>
+</html>

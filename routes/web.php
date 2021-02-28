@@ -21,17 +21,12 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('/yas', function () {
-    return view('yas');
-});
-
-
-Route::get('connexion', function () {
-    return view('connexion');
-});
-
 Route::get('stat', function () {
     return view('stat');
+});
+
+Route::get('pat', function () {
+    return view('pat');
 });
 
 Route::get('ordo', function () {
@@ -39,29 +34,26 @@ Route::get('ordo', function () {
 });
 
 
-Route::get('/cnx', function () {
-    return view('cnx');
+
+Route::get('/addpa', function () {
+    return view('addpa');
 });
 
-Route::get('/connexion', function () {
-    return view('connexion');
+Route::get('/serc', function () {
+    return view('secr');
 });
 
+Route::get('/inscription', 'InscriptionController@formulaire');
 
-Route::post('/cnx', function () {
+Route::post('/inscription','InscriptionController@traitement');
 
-    $utilisateur= new App\utilisateur;
-    $utilisateur->username = Request('username');
-    $utilisateur->specialty = Request('specialty');
-    $utilisateur->email = Request('email');
-    $utilisateur->password = Request('password');
-    
+Route::get('/secr','UtilisateursController@liste');
 
-    $utilisateur->save();
+Route::get('/connexion', 'ConnexionController@formulaire');
 
-    return 'Formulaire reçu' ;
+Route::post('/connexion','ConnexionController@traitement');
 
-});
+
 
 
 Route::get('doc', function () {
