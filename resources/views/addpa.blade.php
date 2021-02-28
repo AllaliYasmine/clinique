@@ -75,29 +75,8 @@
    <link rel="stylesheet" href="css/custom.css">
 
    <!-- link patient-->
-   <script type="text/javascript">
-	JotForm.init(function(){
-      JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
-      setTimeout(function() {
-          $('input_225').hint('ex: myname@example.com');
-       }, 20);
-if (window.JotForm && JotForm.accessible) $('input_73').setAttribute('tabindex',0);
-      JotForm.setPhoneMaskingValidator( 'input_74_full', '(###) ###-####' );
-if (window.JotForm && JotForm.accessible) $('input_119').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_118').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_22').setAttribute('tabindex',0);
-      JotForm.description('input_22', 'Please list all medications (DRUG NAME, DOSE, FREQUENCY, ROUTE) that you are currently prescribed, if more than one, separate them with a comma.');
-	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
-	JotForm.newPaymentUIForNewCreatedForms = false;
-	JotForm.newPaymentUI = true;
-    /*INIT-END*/
-	});
 
-   JotForm.prepareCalculationsOnTheFly([null,{"name":"newPatient","qid":"1","text":"New Patient Enrollment","type":"control_head"},{"name":"submitForm","qid":"2","text":"Enroll","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},{"name":"address4","qid":"4","text":"Address:","type":"control_address"},{"name":"contactNumber","qid":"5","text":"Contact Number:","type":"control_phone"},{"name":"dateOf","qid":"6","text":"Date of Birth","type":"control_birthdate"},null,null,null,null,null,null,{"name":"emergencyContact13","qid":"13","text":"Emergency Contact:","type":"control_fullname"},null,null,null,null,null,null,null,null,{"description":"Please list all medications (DRUG NAME, DOSE, FREQUENCY, ROUTE) that you are currently prescribed, if more than one, separate them with a comma.","name":"ifYes","qid":"22","text":"If yes, please list it here","type":"control_textarea"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"takingAny","qid":"43","text":"Taking any medications, currently?","type":"control_radio"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"relationship","qid":"73","text":"Relationship","type":"control_textbox"},{"name":"contactNumber74","qid":"74","text":"Contact Number","type":"control_phone"},{"name":"clickTo75","qid":"75","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"clickTo108","qid":"108","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,{"name":"heightinches118","qid":"118","text":"Height (inches)","type":"control_textbox"},{"name":"weightpounds","qid":"119","text":"Weight (pounds)","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"email","qid":"225","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,null,null,null,null,{"name":"sex","qid":"231","text":"Sex","type":"control_dropdown"},{"name":"maritalStatus232","qid":"232","text":"Marital Status","type":"control_dropdown"},{"name":"clickTo233","qid":"233","text":"In case of emergency","type":"control_text"},{"name":"lthrgt","qid":"234","text":"","type":"control_text"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New Patient Enrollment","type":"control_head"},{"name":"submitForm","qid":"2","text":"Enroll","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},{"name":"address4","qid":"4","text":"Address:","type":"control_address"},{"name":"contactNumber","qid":"5","text":"Contact Number:","type":"control_phone"},{"name":"dateOf","qid":"6","text":"Date of Birth","type":"control_birthdate"},null,null,null,null,null,null,{"name":"emergencyContact13","qid":"13","text":"Emergency Contact:","type":"control_fullname"},null,null,null,null,null,null,null,null,{"description":"Please list all medications (DRUG NAME, DOSE, FREQUENCY, ROUTE) that you are currently prescribed, if more than one, separate them with a comma.","name":"ifYes","qid":"22","text":"If yes, please list it here","type":"control_textarea"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"takingAny","qid":"43","text":"Taking any medications, currently?","type":"control_radio"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"relationship","qid":"73","text":"Relationship","type":"control_textbox"},{"name":"contactNumber74","qid":"74","text":"Contact Number","type":"control_phone"},{"name":"clickTo75","qid":"75","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"clickTo108","qid":"108","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,{"name":"heightinches118","qid":"118","text":"Height (inches)","type":"control_textbox"},{"name":"weightpounds","qid":"119","text":"Weight (pounds)","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"email","qid":"225","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,null,null,null,null,{"name":"sex","qid":"231","text":"Sex","type":"control_dropdown"},{"name":"maritalStatus232","qid":"232","text":"Marital Status","type":"control_dropdown"},{"name":"clickTo233","qid":"233","text":"In case of emergency","type":"control_text"},{"name":"lthrgt","qid":"234","text":"","type":"control_text"}]);}, 20); 
-</script>
+
 </head>
 <body class="clinic_version">
 
@@ -133,7 +112,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
 
 	<!-- add patient -->
 
-  <form class="jotform-form" action="https://submit.jotform.com/submit/210365341099555/" method="post" name="form_210365341099555" id="210365341099555" accept-charset="utf-8" autocomplete="on" novalidate="true" style="background-image:url('images/clinic_02.jpg');">
+  <form class="jotform-form" action="/addpa" method="post" style="background-image:url('images/clinic_02.jpg');">
   <input type="hidden" name="formID" value="210365341099555">
   <input type="hidden" id="JWTContainer" value="">
   <input type="hidden" id="cardinalOrderNumber" value="">
@@ -275,66 +254,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
                 <option value="1982"> 1982 </option>
                 <option value="1981"> 1981 </option>
                 <option value="1980"> 1980 </option>
-                <option value="1979"> 1979 </option>
-                <option value="1978"> 1978 </option>
-                <option value="1977"> 1977 </option>
-                <option value="1976"> 1976 </option>
-                <option value="1975"> 1975 </option>
-                <option value="1974"> 1974 </option>
-                <option value="1973"> 1973 </option>
-                <option value="1972"> 1972 </option>
-                <option value="1971"> 1971 </option>
-                <option value="1970"> 1970 </option>
-                <option value="1969"> 1969 </option>
-                <option value="1968"> 1968 </option>
-                <option value="1967"> 1967 </option>
-                <option value="1966"> 1966 </option>
-                <option value="1965"> 1965 </option>
-                <option value="1964"> 1964 </option>
-                <option value="1963"> 1963 </option>
-                <option value="1962"> 1962 </option>
-                <option value="1961"> 1961 </option>
-                <option value="1960"> 1960 </option>
-                <option value="1959"> 1959 </option>
-                <option value="1958"> 1958 </option>
-                <option value="1957"> 1957 </option>
-                <option value="1956"> 1956 </option>
-                <option value="1955"> 1955 </option>
-                <option value="1954"> 1954 </option>
-                <option value="1953"> 1953 </option>
-                <option value="1952"> 1952 </option>
-                <option value="1951"> 1951 </option>
-                <option value="1950"> 1950 </option>
-                <option value="1949"> 1949 </option>
-                <option value="1948"> 1948 </option>
-                <option value="1947"> 1947 </option>
-                <option value="1946"> 1946 </option>
-                <option value="1945"> 1945 </option>
-                <option value="1944"> 1944 </option>
-                <option value="1943"> 1943 </option>
-                <option value="1942"> 1942 </option>
-                <option value="1941"> 1941 </option>
-                <option value="1940"> 1940 </option>
-                <option value="1939"> 1939 </option>
-                <option value="1938"> 1938 </option>
-                <option value="1937"> 1937 </option>
-                <option value="1936"> 1936 </option>
-                <option value="1935"> 1935 </option>
-                <option value="1934"> 1934 </option>
-                <option value="1933"> 1933 </option>
-                <option value="1932"> 1932 </option>
-                <option value="1931"> 1931 </option>
-                <option value="1930"> 1930 </option>
-                <option value="1929"> 1929 </option>
-                <option value="1928"> 1928 </option>
-                <option value="1927"> 1927 </option>
-                <option value="1926"> 1926 </option>
-                <option value="1925"> 1925 </option>
-                <option value="1924"> 1924 </option>
-                <option value="1923"> 1923 </option>
-                <option value="1922"> 1922 </option>
-                <option value="1921"> 1921 </option>
-                <option value="1920"> 1920 </option>
+             
               </select>
               <label class="form-sub-label" for="input_6_year" id="sublabel_6_year" style="min-height:13px" aria-hidden="false"> Year </label>
             </span>
@@ -348,12 +268,22 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
             <option value=""> Please Select </option>
             <option value="Male"> Male </option>
             <option value="Female"> Female </option>
-            <option value="N/A"> N/A </option>
+            
           </select>
         </div>
       </li>
       <li class="form-line" data-type="control_phone" id="id_5">
         <label class="form-label form-label-left" id="label_5" for="input_5_full"> Contact Number: </label>
+        <div id="cid_5" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_5_full" name="q5_contactNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" im-insert="true" maskvalue="(###) ###-####">
+            <label class="form-sub-label is-empty" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">  </label>
+          </span>
+        </div>
+      </li>
+
+      <li class="form-line" data-type="control_phone" id="id_5">
+        <label class="form-label form-label-left" id="label_5" for="input_5_full"> numéro de sécurité sociale: </label>
         <div id="cid_5" class="form-input" data-layout="half">
           <span class="form-sub-label-container" style="vertical-align:top">
             <input type="tel" id="input_5_full" name="q5_contactNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" im-insert="true" maskvalue="(###) ###-####">
@@ -406,11 +336,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
         <div id="cid_232" class="form-input" data-layout="half">
           <select class="form-dropdown" id="input_232" name="q232_maritalStatus232" style="width:310px" data-component="dropdown" aria-labelledby="label_232">
             <option value=""> Please Select </option>
-            <option value="Single"> Single </option>
-            <option value="Married"> Married </option>
-            <option value="Divorced"> Divorced </option>
-            <option value="Legally separated"> Legally separated </option>
-            <option value="Widowed"> Widowed </option>
+            <option value="Non"> Non </option>
+            <option value="Oui"> Oui </option>
+            
           </select>
         </div>
       </li>
@@ -491,12 +419,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
 <!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+
 <!--===============================================================================================-->
    <script src="js/main.js"></script>
    
@@ -510,24 +433,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"newPatient","qid":"1","text":"New P
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
 
 
-     <script>
-  JotForm.showJotFormPowered = "new_footer";
-  </script>
-  <script>
-  JotForm.poweredByText = "Powered by JotForm";
-  </script>
-  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210365341099555-210365341099555">
-  <script type="text/javascript">
-  var all_spc = document.querySelectorAll("form[id='210365341099555'] .si" + "mple" + "_spc");
-for (var i = 0; i < all_spc.length; i++)
-{
-  all_spc[i].value = "210365341099555-210365341099555";
-}
-  </script>
-  <div class="formFooter-heightMask">
-  </div>
+
   
-<input type="hidden" name="event_id" value="1612640077166_210365341099555_5IdOFva"></form><img id="event_tracking_image" src="./New Patient Enrollment Form_files/saved_resource" alt="jftr" width="1" height="1" style="display: none;">
+
 
 <script src="./New Patient Enrollment Form_files/smoothscroll.min.js.téléchargement"></script>
 <script src="./New Patient Enrollment Form_files/errorNavigation.js.téléchargement"></script>

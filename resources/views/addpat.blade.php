@@ -124,16 +124,16 @@
             <div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
-               <form action="/inscription" method="post"  class="login100-form validate-form" >
+               <form action="/addpat" method="post"  class="login100-form validate-form" >
 
 					<span class="login100-form-title">
-					   + Add Utilisateur :
+					   + Add Patient :
                </span>
     
            {{ csrf_field() }}
 
            <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="username" placeholder="Dr. UserName">
+						<input class="input100" type="text" name="first_name" placeholder="First Name">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
@@ -142,7 +142,39 @@
 
         
                <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="specialty" placeholder="Specialty">
+						<input class="input100" type="text" name="last_name" placeholder="Laste Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="date" name="Date_of_Birth" placeholder="Date of Birth">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="sex" placeholder="sex">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="Contact_Number" placeholder="Contact Number">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="numéro_de_sécurité_sociale" placeholder="numéro de sécurité sociale">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -156,37 +188,50 @@
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
-        @if($errors->has('email'))
-           <p> {{ $errors->first('email') }}</p>
-        @endif
-
-
-     <div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password">
+        
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="Address" placeholder="Address">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
 						</span>
-					</div>
-        @if($errors->has('password'))
-           <p> {{ $errors->first('password') }}</p>
-        @endif
+               </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="password_confirmation" placeholder="Password (confirmation)">
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="Maladies_Chroniques" placeholder="Maladies Chroniques">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
 						</span>
-					</div>
-        @if($errors->has('password_confirmation'))
-           <p> {{ $errors->first('password_confirmation') }}</p>
-        @endif
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="antécédents" placeholder="antécédents">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="Allergie" placeholder="Allergie">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="commentaires" placeholder="commentaires">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
 
 
         <div class="container-login100-form-btn" class="control">
 						<button class="login100-form-btn" class="button is-link" type="submit" >
-							Register
+							Add Patient
 						</button>
 					</div>
       

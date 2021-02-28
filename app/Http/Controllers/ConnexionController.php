@@ -30,10 +30,9 @@ class ConnexionController extends Controller
 
         if($resultat){
 
-            return redirect('/inscription');
+            return redirect('/admin-cmpt');
         }
     
-        return back()->withInput()->withErrors();
-        
+        return redirect('/admin-cmpt');
     }
 }
