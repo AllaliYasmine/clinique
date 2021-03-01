@@ -49,7 +49,7 @@
       <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">

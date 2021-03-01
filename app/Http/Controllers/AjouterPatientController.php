@@ -33,7 +33,7 @@ class AjouterPatientController extends Controller
     
         $patient->save();
     
-        return "patient enregistrer :"; 
+        return "Patient Enregistrer :"; 
 
 
     }

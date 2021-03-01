@@ -35,7 +35,7 @@
       <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">
@@ -63,7 +63,7 @@
 				  
                   <div id="navbar" class="navbar-collapse collapse">
                      <ul class="nav navbar-nav">
-                        <li><a class="active" href="{{ url('index')}}">Home</a></li>
+                        <li><a class="active" href="{{ url('connexion')}}">Login</a></li>
                         <li><a data-scroll href="#about">About us</a></li>
                         <li><a data-scroll href="{{ url('inscription')}}">Admin</a></li>
                         <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>

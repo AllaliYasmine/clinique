@@ -8,7 +8,7 @@
   <body style="background-image:url('images/bg-banner.jpg');">
   
   <div class="wrapper">
-      <div class="title">Login Form</div>
+      <div class="title">Welcome To Lifecare</div>
       <form action="/connexion" method="post">
 
       {{ csrf_field() }}
@@ -21,6 +21,10 @@
         <div class="field">
           <input type="password" required class="input"  type="password" name="password">
           <label>Password</label>
+        </div>
+        <div class="field">
+          <input type="text" required class="input"  type="text" name="role">
+          <label>Role</label>
         </div>
 
         <div class="content">

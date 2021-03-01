@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- Basic -->
-   <meta charset="utf-8">
+<head>
+	<title> Secretaria </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<!--link rel="icon" type="image/png" href="images/icons/favicon.ico"/-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+ <!-- Basic -->
+ <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <!-- Mobile Metas -->
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,16 +47,18 @@
    <link rel="stylesheet" href="css/responsive.css">
    <!-- Custom CSS -->
    <link rel="stylesheet" href="css/custom.css">
-   <body class="clinic_version">
-      <!-- LOADER -->
-      <div id="preloader">
-         <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
+</head>
+<body class="clinic_version">
+
+ <!-- LOADER -->
+ <div id="preloader">
+         <img class="preloader" src="images/loaders/heart-loading2.gif" alt=""  >
       </div>
       <!-- END LOADER -->
-      <header>
+	  <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">
@@ -54,6 +77,7 @@
                </div>
             </div>
          </div>
+
          <div class="header-bottom wow fadeIn">
             <div class="container">
                <nav class="main-menu">
@@ -63,13 +87,12 @@
 				  
                   <div id="navbar" class="navbar-collapse collapse">
                      <ul class="nav navbar-nav">
-                        <li><a class="active" href="{{ url('index')}}">Home</a></li>
-                        <li><a data-scroll href="#about">About us</a></li>
-                        <li><a data-scroll href="{{ url('inscription')}}">Admin</a></li>
-                        <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
-                        <li><a data-scroll href="{{ url('secr')}}">Secretaria </a></li>
-						<li><a data-scroll href="{{ url('pat')}}">Patient</a></li>
-                        <li><a data-scroll href="{{ url('stat')}}">Statistique</a></li>
+                        <li><a class="active" href="{{ url('addpa')}}">+ add patient</a></li>
+                     
+                     </ul>
+                     <ul class="nav navbar-nav">
+                     <li><a class="active" href="{{ url('ordo')}}">+ add Ordonance</a></li>
+                     
                      </ul>
                   </div>
                </nav>
@@ -87,55 +110,95 @@
                </div>
             </div>
          </div>
-      </header>
-      <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('images/slider-02.jpg');">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-sm-12">
-                  <div class="text-contant">
+   
+	  </header>
 
-                  <div class="limiter">
+	
+	<div class="limiter">
 		<div class="container-login100"  style="background-image:url('images/slider-bg.png');" >
 			<div class="wrap-login100">
-           
+            <div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+               <form action="/secr" method="post"  class="login100-form validate-form" >
+
+					<span class="login100-form-title">
+					   + Add Patient :
+               </span>
+    
+           {{ csrf_field() }}
+
+           <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="firt_name" placeholder="First Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="last_name" placeholder="Last Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+               </div>
+
         
-                                <div class="container">
-                                    <table class="row justify-content-center">
-                                       <div class="col-ml-8">
-                                             <div class="card">
-                                                <div class="card-header"> Liste des Utilisateurs </div>
-                                                <div class="card-body">
-                                        
-                                            <ul>
-                                            @foreach($utilisateurs as $utilisateur)
-                                                <li>{{ $utilisateur->username }}</li>
-                                                <li>{{ $utilisateur->specialty }}</li>
-                                                <li>{{ $utilisateur->email }}</li>
-                                            @endforeach  
-                                           </ul>>
-                                        
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="num" placeholder="numéro de sécurité sociale">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
 
-</div>
-</div>
-</div>
-                                        </table>
-                                 </div>
-                           
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="date" name="date" placeholder=" date de naissance">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
 
-                </div>
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="numtel" placeholder=" Numéro de tel">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+
+               <div class="wrap-input100 validate-input" data-validate = "#">
+						<input class="input100" type="text" name="adresse" placeholder="Adresse">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+               </div>
+     
+     
+              <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+        
+
+        <div class="container-login100-form-btn" class="control">
+						<button class="login100-form-btn" class="button is-link" type="submit" >
+							Add Patient
+						</button>
+					</div>
+      
+				</form>
+			</div>
 		</div>
 	</div>
-                  
-                  </div>
-               </div>
-            </div>
-            <!-- end row -->
-         </div>
-         <!-- end container -->
-      </div>
-      <!-- end section -->
-   
-      <div class="copyright-area wow fadeIn">
+	
+	<div class="copyright-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-8">
@@ -158,13 +221,35 @@
             </div>
          </div>
       </div>
-      <!-- end copyrights -->
-      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+   <script src="js/main.js"></script>
+   
+    <!-- end copyrights -->
+    <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
       <!-- all js files -->
       <script src="js/all.js"></script>
       <!-- all plugins -->
       <script src="js/custom.js"></script>
       <!-- map -->
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
-   </body>
+
+</body>
 </html>
+
+

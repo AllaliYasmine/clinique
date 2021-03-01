@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> Login admin </title>
+	<title> Inscription </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -58,7 +58,7 @@
 	  <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">

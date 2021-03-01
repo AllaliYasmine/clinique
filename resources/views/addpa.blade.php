@@ -88,7 +88,7 @@
 	  <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">
@@ -123,10 +123,10 @@
           <div class="form-header-group hasImage header-large" data-imagealign="Right">
             <div class="header-text httal htvam">
               <h1 id="header_1" class="form-header" data-component="header">
-                New Patient Enrollment
+                New Patient Enregistrement
               </h1>
               <div id="subHeader_1" class="form-subHeader">
-                Dr. Xander M. Spencer
+                Dr. Allali M. yasmine
               </div>
             </div>
             <div class="header-logo">
@@ -212,24 +212,7 @@
             <span class="form-sub-label-container" style="vertical-align:top">
               <select name="q6_dateOf[year]" id="input_6_year" class="form-dropdown" data-component="birthdate-year" aria-labelledby="label_6 sublabel_6_year">
                 <option>  </option>
-                <option value="2021"> 2021 </option>
-                <option value="2020"> 2020 </option>
-                <option value="2019"> 2019 </option>
-                <option value="2018"> 2018 </option>
-                <option value="2017"> 2017 </option>
-                <option value="2016"> 2016 </option>
-                <option value="2015"> 2015 </option>
-                <option value="2014"> 2014 </option>
-                <option value="2013"> 2013 </option>
-                <option value="2012"> 2012 </option>
-                <option value="2011"> 2011 </option>
-                <option value="2010"> 2010 </option>
-                <option value="2009"> 2009 </option>
-                <option value="2008"> 2008 </option>
-                <option value="2007"> 2007 </option>
-                <option value="2006"> 2006 </option>
-                <option value="2005"> 2005 </option>
-                <option value="2004"> 2004 </option>
+               
                 <option value="2003"> 2003 </option>
                 <option value="2002"> 2002 </option>
                 <option value="2001"> 2001 </option>
@@ -244,16 +227,7 @@
                 <option value="1992"> 1992 </option>
                 <option value="1991"> 1991 </option>
                 <option value="1990"> 1990 </option>
-                <option value="1989"> 1989 </option>
-                <option value="1988"> 1988 </option>
-                <option value="1987"> 1987 </option>
-                <option value="1986"> 1986 </option>
-                <option value="1985"> 1985 </option>
-                <option value="1984"> 1984 </option>
-                <option value="1983"> 1983 </option>
-                <option value="1982"> 1982 </option>
-                <option value="1981"> 1981 </option>
-                <option value="1980"> 1980 </option>
+               
              
               </select>
               <label class="form-sub-label" for="input_6_year" id="sublabel_6_year" style="min-height:13px" aria-hidden="false"> Year </label>

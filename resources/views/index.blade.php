@@ -35,7 +35,7 @@
       <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">
@@ -63,7 +63,7 @@
 				  
                   <div id="navbar" class="navbar-collapse collapse">
                      <ul class="nav navbar-nav">
-                        <li><a class="active" href="{{ url('index')}}">Home</a></li>
+                        <li><a class="active" href="{{ url('connexion')}}">Login </a></li>
                         <li><a data-scroll href="#about">About us</a></li>
                         <li><a data-scroll href="{{ url('inscription')}}">Admin</a></li>
                         <li><a data-scroll href="{{ url('doc')}}">Doctors</a></li>
@@ -95,7 +95,7 @@
                   <div class="text-contant">
                      <h2>
                         <span class="center"><span class="icon"><img src="images/icon-logo.png" alt="#" /></span></span>
-                        <a href="" class="typewrite" data-period="2000"  style="background:#ffffff;" data-type='[ "Elsalamo Alaykum Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Life Care", "We Care Your Health", "We are Expert!" ]'>
                         <span class="wrap"></span>
                         </a>
                      </h2>
@@ -231,7 +231,7 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="logo padding">
-                     <a href=""><img src="images/logo.png" alt=""></a>
+                     <a href=""><img src="images/logo1.png" alt=""></a>
                      <p>Locavore pork belly scen ester pine est chill wave microdosing pop uple itarian cliche artisan.</p>
                   </div>
                </div>
