@@ -96,7 +96,12 @@
                      </ul>
 
                      <ul class="nav navbar-nav">
-                     <li><a class="active" href="{{ url('inscription')}}">+ add Users</a></li>
+                     <li><a class="active" href="{{ url('cnx')}}">Afficher Users</a></li>
+                     </ul>
+
+                     
+                     <ul class="nav navbar-nav">
+                     <li><a class="active" href="{{ url('cnx1')}}">Afficher Patients</a></li>
                      </ul>
                   </div>
                </nav>

@@ -28,11 +28,10 @@ class ConnexionController extends Controller
 
         ]);
 
-        if($resultat){
-
-            return redirect('/admin-cmpt');
-        }
-    
-        return redirect('/admin-cmpt');
+        var_dump($resultat);
+        
+          return view ('/admin-cmpt');
+        
+       
     }
 }

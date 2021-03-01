@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> Secretaria </title>
+	<title> Login Admin </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -58,7 +58,7 @@
 	  <header>
          <div class="header-top wow fadeIn">
             <div class="container">
-               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo1.png" alt="image"></a>
+               <a class="navbar-brand" href="{{ url('index')}}"><img src="images/logo.png" alt="image"></a>
                <div class="right-header">
                   <div class="header-info">
                      <div class="info-inner">
@@ -77,7 +77,6 @@
                </div>
             </div>
          </div>
-
          <div class="header-bottom wow fadeIn">
             <div class="container">
                <nav class="main-menu">
@@ -93,6 +92,10 @@
                      <ul class="nav navbar-nav">
                      <li><a class="active" href="{{ url('ordo')}}">+ add Ordonance</a></li>
                      
+                     </ul>
+
+                     <ul class="nav navbar-nav">
+                     <li><a class="active" href="{{ url('affichage')}}">+ add Users</a></li>
                      </ul>
                   </div>
                </nav>
@@ -110,90 +113,49 @@
                </div>
             </div>
          </div>
-   
 	  </header>
 
 	
 	<div class="limiter">
-		<div class="container-login100"  style="background-image:url('images/slider-bg.png');" >
+		<div class="container-login100"  style="background-image:url('images/clinic_02.jpg');" >
 			<div class="wrap-login100">
-            <div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
-				</div>
-               <form action="/addpat" method="post"  class="login100-form validate-form" >
+				
 
-					<span class="login100-form-title">
-					   + Add Patient :
-               </span>
-    
-           {{ csrf_field() }}
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <h5 class="card-header">Informationq Personnelle des Patient </h5>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered first">
+                                       
+                                            <lu>
+                                            <h1> Username of Patient </h1>
+                                            @foreach($patients as $patient)
+                                            
+                                                <li>{{ $patient->first_name }}</li>
+                                                <li>{{ $patient->last_name }}</li>
+                                                
+                                            @endforeach  
 
-           <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="firt_name" placeholder="First Name">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
-               </div>
+                                            </lu>
 
-               <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="last_name" placeholder="Last Name">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
-               </div>
+                                            <lu>
+                                            
+                                            <h1> Emails of Patient </h1>
+                                            @foreach($patients as $patient)
+                                            
+                                                <li>{{ $patient->email }}</li>
+                                                
+                                            @endforeach  
+                                                
+                                            </lu>
+                                        
+                                        </table>
+                                 </div>
+                            </div>
+                        </div>
+	             </div>
 
-        
-               <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="num" placeholder="numéro de sécurité sociale">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
-						</span>
-               </div>
-
-               <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="date" name="date" placeholder=" date de naissance">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
-						</span>
-               </div>
-
-               <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="numtel" placeholder=" Numéro de tel">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
-						</span>
-               </div>
-
-               <div class="wrap-input100 validate-input" data-validate = "#">
-						<input class="input100" type="text" name="adresse" placeholder="Adresse">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
-						</span>
-               </div>
-     
-     
-              <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="email" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
-        
-
-        <div class="container-login100-form-btn" class="control">
-						<button class="login100-form-btn" class="button is-link" type="submit" >
-							Add Patient
-						</button>
-					</div>
-      
-				</form>
 			</div>
 		</div>
 	</div>
@@ -251,5 +213,3 @@
 
 </body>
 </html>
-
-

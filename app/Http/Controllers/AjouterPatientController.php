@@ -9,31 +9,26 @@ class AjouterPatientController extends Controller
 
 
     public function formulaire (){
-        return view('addpa');
+        return view('addpat');
     }
     public function traitement(){
 
-        $patient= new App\patient;
-        $patient->first_name = Request('first name');
-        $patient->last_name = Request('last name');
-        $patient->Date_of_Birth = Request('Date of Birth');
-        $patient->sex = Request('sex');
-        $patient->Contact_Number = Request('Contact Number');
-        $patient->numéro_de_sécurité_sociale = Request('numéro de sécurité sociale');
-        
-        $patient->email = Request('email');
-        $patient->Address = Request('Address');
+    $patient= new \App\patient;
 
-        $patient->Maladies_Chroniques = Request('Maladies Chroniques');
-        $patient->antécédents = Request('antécédents');
+    $patient->first_name = Request('First name');
+    $patient->last_name = Request('last name');
+    $patient->num = Request('numéro de sécurité sociale');
+    $patient->date = Request('date de naissance');
+    $patient->numtel = Request('Numéro de tel');
+    $patient->address = Request('Address');
+    $patient->email = Request('email');
+    
 
-        $patient->Allergie = Request('Allergie');
-        $patient->commentaires = Request('commentaires');
-        
     
-        $patient->save();
-    
-        return "Patient Enregistrer :"; 
+
+    $patient_tab->save();
+
+    return "patient enregistrer :";
 
 
     }

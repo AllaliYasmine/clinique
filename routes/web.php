@@ -38,9 +38,6 @@ Route::get('ordo', function () {
 });
 
 
-Route::get('/admin-cmpt', function () {
-    return view('admin-cmpt');
-});
 
 Route::get('addpa', function () {
     return view('addpa');
@@ -95,35 +92,38 @@ Route::get('/admin-cmpt','CompteController@accueil');
 
 
 
+Route::get('/addpat', 'AjouterPatientController@formulaire');
+
+Route::post('/addpat','AjouterPatientController@traitement');
+
+
+
+Route::get('/admin-cmpt', function () {
+    return view('admin-cmpt');
+});
+
+Route::get('/cnx', function () {
+    $utilisateurs = App\utilisateur::all();
+
+        return view('cnx',[
+    
+            'utilisateurs' => $utilisateurs,
+        ]);
+});
+
+Route::get('/cnx1', function () {
+    $patients = App\patient::all();
+
+        return view('cnx1',[
+    
+            'patient_tab' => $patient_tab,
+        ]);
+});
+
+
 
 Route::get('/addpat', function () {
     return view('addpat');
 });
 
-Route::post('/addpat', function () {
-
-
-    $patient= new App\patient;
-    $patient->first_name = Request('first name');
-    $patient->last_name = Request('last name');
-    $patient->Date_of_Birth = Request('Date of Birth');
-    $patient->sex = Request('sex');
-    $patient->Contact_Number = Request('Contact Number');
-    $patient->numéro_de_sécurité_sociale = Request('numéro de sécurité sociale');
-    
-    $patient->email = Request('email');
-    $patient->Address = Request('Address');
-
-    $patient->Maladies_Chroniques = Request('Maladies Chroniques');
-    $patient->antécédents = Request('antécédents');
-
-    $patient->Allergie = Request('Allergie');
-    $patient->commentaires = Request('commentaires');
-    
-
-    $patient->save();
-
-    return "patient enregistrer :";
-    return "Formulaire Reçu";
-});
 

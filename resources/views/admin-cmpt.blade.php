@@ -120,23 +120,7 @@
 		<div class="container-login100"  style="background-image:url('images/slider-bg.png');" >
 			<div class="wrap-login100">
            
-                                 <div class="container">
-                                    <div class="row justify-content-center">
-                                     <div class="col-ml-8">
-                                             <div class="card">
-                                                <div class="card-header"> Liste des Utilisateurs </div>
-                                                <div class="card-body">
-                                            <ul>
-                                            @foreach($utilisateurs as $utilisateur)
-                                                <li>{{ $utilisateur->username }}</li>
-                                                
-                                            @endforeach  
-                                           </ul>>
-                                                 </div>
-                                              </div>
-                                     </div>
-                                    </div>
-                                 </div>
+                                 
 
                 </div>
 		</div>
